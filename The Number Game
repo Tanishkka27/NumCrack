@@ -19,7 +19,7 @@ int main()
     // Seed the random number generator
     srand(time(0));
 
-    // Generating random number between the lower and upper
+    // Generating a random number between the lower and upper bound
     x = (rand() % (upper - lower + 1)) + lower;
     total_chances
         = (int)ceil(log(upper - lower + 1) / log(2));
@@ -28,12 +28,11 @@ int main()
            "integer!\n\n",
            total_chances);
 
-    // for calculation of minimum number of guesses depends
-    // upon range
+    // for the calculation of the minimum number of guesses 
     while (count < total_chances) {
         count++;
 
-        // Taking guessing number as input
+        // Taking a guessing number as input
         printf("Guess a number: ");
         scanf("%d", &guess);
 
@@ -42,7 +41,7 @@ int main()
             printf(
                 "Congratulations you did it in %d try!\n",
                 count);
-            // Once guessed, loop will break
+            // Once guessed, the loop will break
             flag = 1;
             break;
         }
@@ -54,8 +53,7 @@ int main()
         }
     }
 
-    // If Guessing is more than required guesses, shows this
-    // output.
+    // If Guessing is more than the required guesses,
     if (!flag) {
         printf("\nThe number is %d\n", x);
         printf("\tBetter Luck Next time!\n");
