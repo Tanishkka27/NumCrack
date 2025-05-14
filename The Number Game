@@ -1,6 +1,5 @@
 #include <math.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
 
 int main()
@@ -16,13 +15,23 @@ int main()
     printf("Enter Upper bound: ");
     scanf("%d", &upper);
 
-    // Seed the random number generator
-    srand(time(0));
+
+
+    // if upper bound is less than lower bound condition to be added
+
+
+
+    // The random number generator to be added
+
+
+
 
     // Generating a random number between the lower and upper bound
-    x = (rand() % (upper - lower + 1)) + lower;
-    total_chances
-        = (int)ceil(log(upper - lower + 1) / log(2));
+
+  
+
+
+
 
     printf("\n\tYou've only %d chances to guess the "
            "integer!\n\n",
@@ -52,6 +61,7 @@ int main()
             printf("You guessed too high!\n");
         }
     }
+
 
     // If Guessing is more than the required guesses,
     if (!flag) {
